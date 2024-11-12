@@ -122,6 +122,7 @@
         <input type="text" id="nama" placeholder="Nama Barang" required>
         <input type="text" id="harga" placeholder="Harga Barang" required>
         <button onclick="submitData()">Tambah Barang</button>
+        <button onclick="backLog()">Back to Login</button>
     </div>
 
     <!-- Tabel untuk menampilkan data -->
@@ -204,6 +205,10 @@
 
         // Muat data tabel saat halaman pertama kali dimuat
         window.onload = loadTableData;
+
+        function backLog(){
+            window.location.href = "login.html";
+        }
     </script>
 
 </body>
